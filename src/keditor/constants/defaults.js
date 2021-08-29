@@ -6,7 +6,7 @@ export default {
      * Title will be showed in left of topbar
      * @option {String}
      */
-    title: 'MagPages1',
+    title: 'MagPages',
 
     /*
      * containerForQuickAddComponent The container snippet which will be added automatically in content are when you adding a component. Note: component will be added in first container content of container
@@ -96,7 +96,10 @@ export default {
          * Text title for devices switcher
          * @option {String}
          */
-        viewOnMobile: 'View on mobile'
+        viewOnMobile: 'View on mobile',
+        viewOnTablet: 'View on tablet',
+        viewOnLaptop: 'View on laptop',
+        viewOnDesktop: 'View on desktop',
 
         /*
          * Text title for preview mode
@@ -342,7 +345,10 @@ export default {
          * @option {Object}
          */
         deviceClass: {
-            MOBILE: 'xs'
+            MOBILE: 'xs',
+            TABLET: 'sm',
+            LAPTOP: 'md',
+            DESKTOP: 'lg'
         },
 
         /**

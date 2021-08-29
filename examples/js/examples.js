@@ -8,8 +8,8 @@
     function initToolbar() {
         var toolbar = $('<div class="toolbar"></div>');
         var btnViewSource = $('<button type="button" class="view-source"><i class="fa fa-code"></i> View source</button>');
-        var btnViewContent = $('<button type="button" class="view-content"><i class="fa fa-file-text-o"></i> Get content</button>');
-        var btnBackToList = $('<a href="./" class="view-content"><i class="fa fa-list"></i> Examples list</a>');
+        var btnViewContent = $();
+        var btnBackToList = $();
 
         toolbar.appendTo(document.body);
         toolbar.append(btnViewSource);
@@ -93,7 +93,7 @@
         modal.find('.source-html').html(beautifyHtml(htmlCode + htmlInclude));
 
         var jsCode = $('[data-keditor="script"]').html();
-        jsCode =  jsCode.replace(/\</g, '&lt;').replace(/\>/g, '&gt;');
+        jsCode = jsCode.replace(/\</g, '&lt;').replace(/\>/g, '&gt;');
         modal.find('.source-js').html(beautifyJs(jsCode));
 
         modal.appendTo(document.body);
