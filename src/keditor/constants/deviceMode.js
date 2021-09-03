@@ -1,8 +1,8 @@
 const DEVICE_MODE = {
     MOBILE: 'MOBILE',
-    TABLET: 'TABLET',
-    LAPTOP: 'LAPTOP',
-    DESKTOP: 'DESKTOP',
+    TABLET: 'MOBILE',
+    LAPTOP: 'MOBILE',
+    DESKTOP: 'MOBILE',
 };
 
 export default DEVICE_MODE;

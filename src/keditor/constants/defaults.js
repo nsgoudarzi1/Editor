@@ -6,7 +6,7 @@ export default {
      * Title will be showed in left of topbar
      * @option {String}
      */
-    title: 'MagPages',
+    title: 'SwitchPage',
 
     /*
      * containerForQuickAddComponent The container snippet which will be added automatically in content are when you adding a component. Note: component will be added in first container content of container

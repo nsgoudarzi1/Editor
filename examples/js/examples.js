@@ -7,14 +7,11 @@
 
     function initToolbar() {
         var toolbar = $('<div class="toolbar"></div>');
-        var btnViewSource = $('<button type="button" class="view-source"><i class="fa fa-code"></i> View source</button>');
+        var btnViewSource = $('<button type="button" class="view-source"><i class="fa fa-code"></i> </button>');
         var btnViewContent = $();
         var btnBackToList = $();
 
         toolbar.appendTo(document.body);
-        toolbar.append(btnViewSource);
-        toolbar.append(btnViewContent);
-        toolbar.append(btnBackToList);
 
         btnViewSource.on('click', function () {
             $('#modal-source').modal('show');

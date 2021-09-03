@@ -19,5 +19,4 @@ export default function () {
         btnFullscreen.attr('title', isOn ? options.locale.fullscreenOn : options.locale.fullscreenOff);
     });
 
-    self.topbarRight.append(btnFullscreen);
 }
