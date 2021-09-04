@@ -14,15 +14,15 @@ export default function (modalId, hasFooter = true, disableOriginEvents = false)
             ${hasFooter ? modalFooter : ''}
         </div>
     `);
-    
+
     if (!disableOriginEvents) {
         // Close buttons
         modal.on('click', `.${CSS_CLASS.MODAL_CLOSE}`, function (e) {
             e.preventDefault();
-            
+
             hideModal.call(self, modal);
         });
     }
-    
+
     return modal.appendTo(self.wrapper);
 };

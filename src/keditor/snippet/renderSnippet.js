@@ -20,15 +20,15 @@ export default function (type, title, previewUrl, categories, content, extraAttr
         </section>
     `;
     let snippetContentHtml = `<script id="${snippetId}" type="text/html" ${extraAttrs.join(' ')}>${content}</script>`;
-    
+
     categories = categories.split(options.snippetsCategoriesSeparator);
-    
+
     if (type === 'container') {
         self.categoryContainer = self.categoryContainer.concat(categories);
     } else if (type.indexOf('component') !== -1) {
         self.categoryComponent = self.categoryComponent.concat(categories);
     }
-    
+
     return [
         snippetPreviewHtml,
         snippetContentHtml
