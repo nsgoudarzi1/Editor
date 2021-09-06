@@ -35,8 +35,8 @@
             '    <div class="modal-dialog modal-lg">' +
             '        <div class="modal-content">' +
             '            <div class="modal-header">' +
+            '                <h4 class="modal-title">Cards</h4>' +
             '                <button type="button" class="close" data-dismiss="modal">&times;</button>' +
-            '                <h4 class="modal-title">Content</h4>' +
             '            </div>' +
             '            <div class="modal-body">' +
             '                <pre class="prettyprint lang-html content-html"></pre>' +
@@ -58,8 +58,8 @@
             '    <div class="modal-dialog modal-lg">' +
             '        <div class="modal-content">' +
             '            <div class="modal-header">' +
+            '                <h4 class="modal-title">Cards</h4>' +
             '                <button type="button" class="close" data-dismiss="modal">&times;</button>' +
-            '                <h4 class="modal-title">Source</h4>' +
             '            </div>' +
             '            <div class="modal-body">' +
             '                <ul class="nav nav-tabs">' +
