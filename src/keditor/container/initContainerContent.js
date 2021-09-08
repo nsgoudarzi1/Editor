@@ -20,6 +20,15 @@ export default function (contentArea, container, containerContent, isNested) {
     containerContentInner.html(containerContent.html());
     containerContent.html(containerContentInner);
 
+    let containerContentToolbar = $(
+        generateToolbar.call(self, isNested ? TOOLBAR_TYPE.SUB_CONTAINER_CONTENT : TOOLBAR_TYPE.CONTAINER_CONTENT, options.containerSettingEnabled)
+    );
+    containerContentToolbar.appendTo(containerContent);
+    containerContentToolbar.children(`.${CSS_CLASS.ADD_CONTENT}`).on('click', function (e) {
+        e.preventDefault();
+
+        showSnippetModal.call(self, containerContentInner, ACTION_TYPE.APPEND, true, !isNested);
+    });
 
     containerContentInner.sortable({
         handle: `.${CSS_CLASS.COMPONENT_MOVE}, .${CSS_CLASS.CONTAINER_MOVE}`,
